@@ -1,0 +1,310 @@
+#main {
+    margin-top: 93px;
+
+    // free
+    .free {
+        background-color: $black-color;
+        .container {
+            padding: 20px 0;
+
+            .box {
+                color: #fff;
+                text-align: center;
+
+                @include screen-md {
+                    font-size: 14px;
+                }
+
+                span {
+                    padding-right: 20px;
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: underline;
+                    padding-bottom: 4px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    //refresh
+    .refresh {
+        background-color: $primary-color;
+
+        .container {
+            @include screen-md {
+                padding-top: 30px;
+                padding-bottom: 40px;
+            }
+
+            .wrapper {
+                display: flex;
+                align-items: center;
+                gap: 100px;
+
+                @include screen-md {
+                    flex-direction: column-reverse;
+                    gap: 30px;
+                }
+
+                .left {
+                    @include screen-xs {
+                        width: 80%;
+                    }
+
+                    width: 49.999%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    color: #fff;
+                    width: 49.999%;
+
+                    @include screen-xs {
+                        width: 80%;
+                    }
+
+                    &__head {
+                        font-size: 50px;
+                        font-weight: 400;
+                        margin-bottom: 40px;
+
+                        @include screen-md {
+                            font-size: 36px;
+                            margin-bottom: 18px;
+                        }
+                    }
+
+                    &__text {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+
+                        @include screen-md {
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .btn-box {
+                        padding: 15px 30px;
+                        border: none;
+                        .btn {
+                            color: $black-color;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //fall
+    .fall {
+        padding-top: 100px;
+
+        .container {
+            .row {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                
+                @include screen-md {
+                    flex-direction: column;
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                @include screen-xs {
+                    flex-direction: column;
+                    width: 95%;
+                    margin: 0 auto;
+                }
+
+                .right {
+                    display: flex;
+                    width: 68%;
+                    gap: 10px;
+                    @include screen-md {
+                        width: 95%;
+                    }
+                    @include screen-md {
+                        flex-direction: column;
+                        order: 2;
+                    }
+
+                    .card {
+                        width: 33%;
+                        @include screen-md {
+                            width: 100%;
+                        }
+                        img {
+                            width: 100%;
+                            height: 540px;
+                            object-fit: cover;
+                        }
+                    }
+                    .order{
+                        order: -1;
+                    }
+                }
+
+                .left {
+                    width: 32%;
+                    @include screen-md {
+                        width: 90%;
+                    }
+                    &__cap {
+                        font-size: 40px;
+                        font-weight: 400;
+                        margin-bottom: 40px;
+                    }
+
+                    &__text {
+                        margin-bottom: 40px;
+                    }
+
+                    .btn-box {
+                        transition: .6s;
+                        &:hover{
+                            background-color: gray;
+                            transition: .6s;
+                        }
+                        padding: 15px 30px;
+                        background-color: $black-color;
+                        border: none;
+                        .btn {
+                            color: #fff;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inspired{
+        margin-top: 30px;
+        padding: 200px 0;
+        background-image: url('/assets/images/inspired.webp');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        h2{
+            font-size: 50px;
+            color: #fff;
+            font-weight: 400;
+
+            @include screen-md{
+            font-size: 30px;
+            }
+        }
+    }
+
+    .clothing{
+        padding-top: 100px;
+        .container{
+            .row{
+                display: flex;
+                gap: 25px;
+                @include screen-md{
+                    flex-direction: column;
+                }
+                .card{
+                    width: 50%;
+                    @include screen-md{
+                        width: 100%;
+                    }
+                    img{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    &__title{
+                     font-size: 27px;
+                     font-weight: 400;
+                     margin-bottom: 20px;
+                    }
+                    &__text{
+                     margin-bottom: 20px;
+                    }
+                    .btn-box {
+                        border: none;
+                        transition: .6s;
+                        padding: 15px 40px;
+                        font-size: 15px;
+                        background-color: $black-color;
+                        &:hover{
+                            background-color: gray;
+                            transition: .6s;
+                        }
+                        .btn {
+                            color: #fff;
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .never{
+        padding-top: 80px;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        .container{
+         .box{
+            position: absolute;
+            top: 30%;
+            color: #fff;
+            h4{
+                font-size: 40px;
+                font-weight: 300;
+            }
+            h1{
+                font-size: 64px;
+                max-width: 935px;
+                margin-bottom: 30px;
+                @include screen-md{
+                    font-size: 30px;
+                }
+            }
+            .form{
+                .email{
+                   width: 50%;
+                   padding: 13px;
+                   border: none;
+                   font-size: 16px;
+                   margin-bottom: 30px;
+                }
+                .join{
+                    .btn-box {
+                        &:hover{
+                            background-color: gray;
+                            transition: .6s;
+                        }
+                        padding: 15px 30px;
+                        transition: .6s;
+                        background-color: $black-color;
+                        border: none;
+                        .btn {
+                            color: #fff;
+                        
+                        }
+                    }
+                }
+            }
+         }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
