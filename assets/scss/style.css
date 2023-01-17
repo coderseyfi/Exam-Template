@@ -32,6 +32,7 @@ a, p, span {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
   background-color: #f6f5f5;
 }
 #header .container {
